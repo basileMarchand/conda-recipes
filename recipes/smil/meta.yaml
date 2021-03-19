@@ -1,0 +1,33 @@
+package:
+  name: smil
+  version: 0.11.2
+
+source:
+  git_rev: 
+  git_url: https://github.com/basileMarchand/smil.git
+
+requirements:
+  build:
+    - gxx_linux-64
+    - cmake 3.19.6
+    - swig 
+    - freetype
+    - libtiff
+    - libpng
+    - fftw 
+    - qt
+    - python 
+    - numpy 
+
+
+  run:
+    - gxx_linux-64
+    - qt
+    - python 
+    - numpy
+    - libtiff
+    - libpng
+    - libcurl
+    - jpeg 
+
+  
