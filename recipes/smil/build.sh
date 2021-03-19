@@ -27,7 +27,7 @@ OPT=" -DADDITIONAL_SEARCH_PATHS:STRING=$CONDA_PREFIX \
          -DCONDA_PREFIX:STRING=$CONDA_PREFIX"
 
 
-NUMPY_INCLUDES=`python -c "import numpy; print(numpy.get_include())"`
+NUMPY_INCLUDES=`${PYTHON} -c "import numpy; print(numpy.get_include())"`
 
 
 OPT="$OPT 
